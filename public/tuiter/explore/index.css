@@ -1,0 +1,210 @@
+/* Style the table */
+.wd-main-layout-table {
+    border-collapse: collapse;
+}
+
+.wd-nav-link {
+  width: 10%;
+  padding-top: 20px;
+  padding-right: 20px; 
+  padding-left: 20px;
+}
+
+.wd-main-content {
+  padding-top: 20px;
+  width: 80%;
+  margin: 20px;
+}
+
+
+/* Style the navigation links */
+.wd-nav-head {
+  margin-top: 20px;
+}
+
+.wd-nav-link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wd-nav-link ul li {
+  margin-bottom: 10px;
+}
+
+.wd-nav-link ul li a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+
+/* Style the search container */
+.wd-search-container {
+  margin: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 98%;
+  box-sizing: border-box;
+}
+
+.wd-input-box {
+  width: 80%;
+  height: 40px;
+  font-size: 16px;;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  color: darkgray;
+  padding-left: 50px; /* Add padding for the icon */
+  box-sizing: border-box;
+}
+
+.wd-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 17px;
+  color: darkgray;
+}
+
+.wd-gear-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 83.5%;
+  font-size: 30px;
+  color: #333;
+}
+
+
+
+/* Style the tab list */
+.wd-tabs-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 83%;
+  position: relative;
+}
+
+.wd-tabs-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-family: Trebuchet, sans-serif;
+  position: relative;
+}
+
+
+.wd-tabs-list li {
+  position: relative;
+
+}
+
+.wd-tabs-list li:not(active):hover span {
+  border-color: darkgrey;
+}
+
+.wd-tabs-list li span {
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  color: #808080
+}
+
+.wd-tabs-list li.active span{
+  border-color: #1da1f2; 
+  color: #000;
+}
+
+.wd-tabs-list li span label {
+    display: inline-block;
+    margin-bottom: 20px; /* Add space between text and underline */
+    font-weight: bold;
+}
+
+.wd-tabs-list li span:hover {
+  border-color: #1da1f2;
+  cursor: pointer;
+  color: #1da1f2; 
+}
+
+
+
+/* Style the image overlay */
+.wd-image-overlay {
+    margin: 20px;
+  position: relative;
+  width: 83%;
+}
+
+.wd-image-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+.wd-overlay-text {
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+/* Style the trendings list */
+.wd-trendings-container {
+  margin: 20px;
+  width: 83%;
+}
+
+.wd-trendings-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wd-trendings-list li {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.wd-trending-info {
+  margin-bottom: 10px;
+}
+
+.wd-trending-name {
+  color: #808080;
+  font-family: Trebuchet, sans-serif;
+  font-size: 14px;
+}
+
+.wd-highlight-word {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.wd-num-tuits {
+  color: #777;
+  font-size: 14px;
+  font-family: Trebuchet, sans-serif;
+}
+
+.wd-extension {
+    font-size: 30px;
+    color: #808080;
+    margin-top: -10px;
+  top: 0;
+  padding-right: 20px;
+}
