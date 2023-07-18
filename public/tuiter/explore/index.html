@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <title>Explore CSS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b00d0f68ed.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+              
+              <!-- left column -->
+                <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 mt-3">
+                    <ul class="list-group">
+                        <a href="../home.html" class="list-group-item list-group-item-action">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="../home.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid   fa-house-user"></i>
+                            <span class="d-none d-xl-inline">Home</span>
+                        </a>
+                        <a href="index.html" class="list-group-item list-group-item-action active">
+                            <i class="fa-solid  fa-hashtag"></i>
+                            <span class="d-none d-xl-inline">Explore</span>
+                        </a>
+                        <a href="../notifications.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid  fa-bell"></i> 
+                            <span class="d-none d-xl-inline">Notifications</span>
+                        </a>
+                        <a href="../messages.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid  fa-envelope"></i> 
+                            <span class="d-none d-xl-inline">Messages</span>
+                        </a>
+                        <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid  fa-bookmark"></i> 
+                            <span class="d-none d-xl-inline">Bookmarks</span>
+                        </a>
+                        <a href="../lists.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-list"></i>
+                            <span class="d-none d-xl-inline">Lists</span>
+                        </a>
+                        <a href="../profile.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid  fa-user"></i>
+                            <span class="d-none d-xl-inline">Profile</span>
+                        </a>
+                        <a href="../reply.html" class="list-group-item list-group-item-action">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span class="d-none d-xl-inline">Reply</span>
+                        </a>
+                    </ul>
+                    <a href="../tuit.html">
+                        <button class="btn btn-primary w-100 mt-3 rounded-pill">Tuit</button>
+                    </a>
+                </div>
+                
+
+
+                <!-- middle column -->
+                <div class="col-xxl-6 col-lg-7 col-md-10 col-sm-10">
+                    <div class="container">
+                        <div class="row mt-3">
+                          <div class="col-md-11 col-sm-10">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control rounded-pill ps-5" placeholder="Search Tuiter">
+                                <span class="input-group-text position-absolute" style="top: 50%; transform: translateY(-50%);">
+                                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                                </span>
+                            </div>
+                          </div>
+                          <div class="col-md-1 col-sm-2 text-end">
+                            <i class="fa-solid fa-gear text-primary fa-2x wd-gear-icon-bootstrap-style"></i>
+                          </div>
+                        </div>
+                        
+
+                        <ul class="nav nav-tabs mt-3" id="wd-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="for-you-tab" data-bs-toggle="tab" href="tab-list-files/for-you.html" role="tab" aria-controls="for-you" aria-selected="true">For You</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="trending-tab" data-bs-toggle="tab" href="tab-list-files/trending.html" role="tab" aria-controls="trending" aria-selected="false">Trending</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="tab-list-files/news.html" role="tab" aria-controls="news" aria-selected="false">News</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="sports-tab" data-bs-toggle="tab" href="tab-list-files/sports.html" role="tab" aria-controls="sports" aria-selected="false">Sports</a>
+                          </li>
+                          <li class="nav-item d-none d-sm-none d-md-block" role="presentation">
+                            <a class="nav-link" id="entertainment-tab" data-bs-toggle="tab" href="tab-list-files/entertainment.html" role="tab" aria-controls="entertainment" aria-selected="false">Entertainment</a>
+                          </li>
+                        </ul>
+                        
+                        <div class="list-group mt-2 mb-3">
+                            <div class="list-group-item m-0 p-0">
+                                    <img src="images/frozen.png" class="card-img-top" alt="Image">
+                                    <div class="card-img-overlay"></div>
+                                    <div class="card-body">
+                                        <h3 class="card-title wd-overlay-text">Disney: Frozen II</h3>
+                                    </div>
+                            </div>                           
+                          
+                            <div class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-8">
+                                    <div class="row g-0">
+                                      <div class="col-md-12">
+                                        <div class="card-body">
+                                          <span class="wd-tuit-text-gray">Disney Trending</span><br />
+                                          <span class="wd-tuit-text-black">Frozen <i class="fas fa-check-circle"></i></span>
+                                          <span class="wd-tuit-text-gray"> - 2h</span><br />
+                                          <span class="wd-tuit-text-black">Aenean ut nulla non nulla eleifend venenatis ut ut ex. Mauris eget scelerisque sem </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <div class="square-image-container">
+                                    <div class="image-content rounded" style="background-image: url('images/frozen-icon.jpeg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-8">
+                                    <div class="row g-0">
+                                      <div class="col-md-12">
+                                        <div class="card-body">
+                                          <span class="wd-tuit-text-black">Mulan <i class="fas fa-check-circle"></i></span>
+                                          <span class="wd-tuit-text-gray"> - 2h</span><br />
+                                          <span class="wd-tuit-text-black">Sed quis nisl ante. Proin porttitor elementum nulla eget vehicula </span><br />
+                                          <span class="wd-tuit-text-gray">99.7K Tuits</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <div class="square-image-container">
+                                    <div class="image-content rounded" style="background-image: url('images/mulan.jpeg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+
+                            <div class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-8">
+                                    <div class="row g-0">
+                                      <div class="col-md-12">
+                                        <div class="card-body">
+                                          <span class="wd-tuit-text-gray">Disney Trending</span><br />
+                                          <span class="wd-tuit-text-black">Snow White <i class="fas fa-check-circle"></i></span>
+                                          <span class="wd-tuit-text-gray"> - 2h</span><br />
+                                          <span class="wd-tuit-text-gray">26.4K Tuits</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <div class="square-image-container">
+                                    <div class="image-content rounded" style="background-image: url('images/snowwhite.jpeg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-8">
+                                    <div class="row g-0">
+                                      <div class="col-md-12">
+                                        <div class="card-body">
+                                          <span class="wd-tuit-text-gray">Disney Trending</span><br />
+                                          <span class="wd-tuit-text-black">Beauty and the Beast <i class="fas fa-check-circle"></i></span>
+                                          <span class="wd-tuit-text-gray"> - 2h</span><br />
+                                          <span class="wd-tuit-text-gray">12.9K Tuits</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                  <div class="square-image-container">
+                                    <div class="image-content rounded" style="background-image: url('images/beauty-and-the-beast.jpeg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>          
+                          
+                             
+
+                <!-- right column -->
+                <div class="col-xxl-3 col-xl-3 col-lg-4 d-lg-block d-none mt-3">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                            Who to Follow
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="circle-image">
+                                <img src="images/elsa.jpeg" alt="Image">
+                            </div>
+
+                            <div class="wd-follow-people">
+                                <h6 class="mb-1 wd-tuit-text-black">Elsa <i class="fas fa-check-circle" style="vertical-align: middle;"></i></h6>
+                                <p class="mb-0">@elsa</p>
+                            </div>
+
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="circle-image">
+                                <img src="images/anna.jpeg" alt="Image">
+                            </div>
+                            <div class="wd-follow-people">
+                                <h6 class="mb-1 wd-tuit-text-black">Anna <i class="fas fa-check-circle" style="vertical-align: middle;"></i></h6>
+                                <p class="mb-0">@anna</p>
+                            </div>
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="circle-image">
+                                <img src="images/hans.jpeg" alt="Image">
+                            </div>
+                            <div class="wd-follow-people">
+                                <h6 class="mb-1 wd-tuit-text-black">Hans <i class="fas fa-check-circle" style="vertical-align: middle;"></i></h6>
+                                <p class="mb-0">@hans</p>
+                            </div>
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="circle-image">
+                                <img src="images/olaf.jpeg" alt="Image">
+                            </div>
+                            <div class="wd-follow-people">
+                                <h6 class="mb-1 wd-tuit-text-black">Olaf <i class="fas fa-check-circle" style="vertical-align: middle;"></i></h6>
+                                <p class="mb-0">@olaf</p>
+                            </div>
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+          
+
+    </body>
+
+
+</html>

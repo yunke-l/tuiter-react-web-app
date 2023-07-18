@@ -1,0 +1,261 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+
+/* Style the table */
+.wd-main-layout-table {
+    border-collapse: collapse;
+}
+
+.wd-nav-link {
+  width: 10%;
+  padding-top: 20px;
+  padding-right: 20px; 
+  padding-left: 20px;
+}
+
+.wd-main-content {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 80%;
+}
+
+
+/* Style the navigation links */
+
+.wd-nav-link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wd-nav-link ul li {
+  margin-bottom: 10px;
+}
+
+.wd-nav-link ul li a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+
+/* Style the main content's header */
+.wd-bookmarks-header {
+    margin-top: 20px;
+    margin-left: 40px;
+
+    color: #000;
+    width: 80%;
+}
+
+.wd-arrow-icon {
+    padding-left: 50px;
+    width: 7%;
+    float: left;
+    font-size: 26px;
+ }
+ 
+ .wd-middle-header {
+    width: 79%;
+    float: left;
+    padding-left: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+ }
+ 
+ .wd-extension-icon {
+    padding-left: 10px;
+    float: left;
+    font-size: 26px;
+ }
+ 
+
+
+/* Style the main content's tuit */
+/* Container styles */
+
+.wd-bookmarks-tuits {
+    margin-right: 10%;
+
+}
+  
+  /* Tuit list styles */
+  .wd-tuits-lists {
+    width:83%;
+    list-style-type: none;
+    margin-top: 60px;
+    margin-left: 20px;
+
+  }
+
+  
+  /* Individual tuit styles */
+  .wd-tuit-cell {
+    padding-left: 20px;
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+  }
+
+
+  
+  /* Avatar styles */
+  .wd-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  /* Tuit content styles */
+  .wd-tuit-content {
+    margin-left: 10px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  
+  .wd-tuit-synopsis {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  }
+
+
+  /* Tuit highlights styles */
+  .wd-tuit-highlights {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .wd-username {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .wd-certificate-icon {
+    color: #1da1f2; 
+    padding-left: 5px;
+  }
+  
+  .wd-time {
+    color: #657786; 
+    padding-left: 5px;
+  }
+  
+
+  .wd-tuit-extension {
+    font-size: 24px;
+    font-weight: bold;
+    color: #657786; 
+    margin-top: -10px;
+    top: 0;
+  }
+
+ 
+  
+  /* Tuit text styles */
+  .wd-tuit-preface {
+    margin: 10px 0;
+    padding-right: 20%;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  /* Tuit image styles */
+  .wd-tuit-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  /* Tuit URL styles */
+  .wd-tuit-url {
+    margin-top: 30px;
+    color: #657786;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Tuit title styles */
+  .wd-tuit-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Tuit paragraph styles */
+  .wd-tuit-paragraph {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #657786;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+ 
+
+  .wd-tuit-main-content {
+    margin-top: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+  }
+
+
+  .wd-postfix {
+    padding-left: 5px;
+    margin-top: 20px;
+    width: 85%;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #657786;
+    font-size: 20px;
+  }
+
+  .wd-postfix-content {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .wd-postfix-content i {
+    margin-right: 20px; /* Adjust the margin value as desired */
+  }
+  
+  .wd-color-blue {
+    color: #1da1f2;
+  }
+
+  .active {
+    color: #E70F4F;
+  }
+  
