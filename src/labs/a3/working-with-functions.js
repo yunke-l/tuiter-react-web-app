@@ -8,6 +8,7 @@ function WorkingWithFunctions() {
 
   return (
       <div>
+        <h1>Working with Functions</h1>
         <Es5Functions/>
         <ArrowFunctions/>
         <ImpliedReturn/>
