@@ -8,8 +8,16 @@ function ProfileScreen() {
   const [ profile, setProfile ] = useState(currentUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const save = () => {
-    dispatch(updateUserThunk(profile));
+  
+  const save = async () => {
+    try {
+      await dispatch(updateUserThunk(profile));
+      // Optionally, you can fetch the updated profile after saving
+      const { payload } = await dispatch(profileThunk());
+      setProfile(payload);
+    } catch (error) {
+      console.error("Error updating user:", error);
+    }
   };
 
   useEffect(() => {
@@ -21,10 +29,12 @@ function ProfileScreen() {
     fetchProfile();
   }, [dispatch]);
 
+
   return (
       <div>
         <h1>Profile Screen</h1>
-        {profile && (<div>
+        {profile && (
+            <div>
               <div>
                 <label>First Name</label>
                 <input type="text" value={profile.firstName}
@@ -44,7 +54,8 @@ function ProfileScreen() {
                          };
                          setProfile(newProfile);
                        }}/>
-              </div></div>
+              </div>
+            </div>
         )}
         <button
             onClick={() => {
