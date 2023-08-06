@@ -37,5 +37,5 @@ function ExploreScreen() {
         <TuitSummaryList/>
       </>
   );
-};
+}
 export default ExploreScreen;

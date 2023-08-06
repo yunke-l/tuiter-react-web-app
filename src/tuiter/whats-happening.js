@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {BsCardImage, BsFiletypeGif, BsEmojiSmile, BsBarChart} from "react-icons/bs";
 import {SlLocationPin} from "react-icons/sl";
-import {createTuit} from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -11,14 +11,14 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   }
   return (
       <>
       <div className="row">
         <div className="col-auto">
-          <img src="/images/nasa.png" width={60}/>
+          <img src="/images/nasa.png" width={60} />
         </div>
         <div className="col-10">
          <textarea value={whatsHappening} placeholder="What's happening?"

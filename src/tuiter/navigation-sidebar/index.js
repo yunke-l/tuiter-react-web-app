@@ -1,9 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const NavigationSidebar = () => {
+  const { currentUser } = useSelector((state) => state.user);
   const { pathname } = useLocation();
-  const [ignore, tuiter, active] = pathname.split("/");
-  const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
+  const [,, active] = pathname.split("/");
+  // const [ignore, tuiter, active] = pathname.split("/");
+  const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists",  "more"];
   return (
       <div className="list-group">
         {links.map((link) =>
@@ -11,6 +15,21 @@ const NavigationSidebar = () => {
               {link}
             </Link>
         )}
+
+        {!currentUser && <NavLink
+            className="list-group-item"
+            activeClassName="active"
+            to="/tuiter/login"> Login </NavLink>}
+
+        {!currentUser && <NavLink
+            className="list-group-item"
+            activeClassName="active"
+            to="/tuiter/register"> Register </NavLink>}
+
+        {currentUser && <NavLink
+            className="list-group-item"
+            activeClassName="active"
+            to="/tuiter/profile"> Profile </NavLink>}
       </div>
   );
 };

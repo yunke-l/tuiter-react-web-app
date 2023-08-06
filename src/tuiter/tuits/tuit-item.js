@@ -1,7 +1,7 @@
 import React from "react";
 import {FaCertificate} from "react-icons/fa";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import { BiX } from 'react-icons/bi';
 
 const TuitItem = (
@@ -9,7 +9,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return(
 
