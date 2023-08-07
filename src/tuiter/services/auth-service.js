@@ -2,14 +2,11 @@ import axios from "axios";
 const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL;
 const USERS_URL = `${SERVER_API_URL}/users`;
 
-
 const api = axios.create({ withCredentials: true });
-
 
 export const login = async ({ username, password }) => {
   const response = await api.post(`${USERS_URL}/login`, { username, password });
-  const user = response.data;
-  return user;
+  return response.data;
 };
 
 export const logout = async () => {
@@ -21,17 +18,17 @@ export const profile = async () => {
   return response;
 };
 
-// export const updateUser = async ({ firstName, lastName }) => {
-//   const response = await api.put(`${USERS_URL}`, { firstName, lastName });
-//   const user = response.data;
-//   return user;
-// }
 export const updateUser = async (user) => {
-  const response = await api.put(`${USERS_URL}/${user._id}`, user);
+  const response = await api.put(`${USERS_URL}`, user);
   return response.data;
 };
-export const register = async ({ username, password, firstName, lastName }) => {
-  const response = await api.post(`${USERS_URL}/register`, { username, password, firstName, lastName });
-  const user = response.data;
-  return user;
-}
+
+export const register = async ({username, password, firstName, lastName}) => {
+  const response = await api.post(`${USERS_URL}/register`, {
+    username,
+    password,
+    firstName,
+    lastName,
+  });
+  return response.data;
+};
