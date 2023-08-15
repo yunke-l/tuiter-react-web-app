@@ -15,13 +15,18 @@ function ProfileScreen() {
     setProfile(newProfile);
   };
 
-  const save = async () => {
-    const updateResponse = await dispatch(updateUserThunk(profile));
-    const fetchResponse = await dispatch(profileThunk());
-    if (updateResponse.payload && fetchResponse.payload) {
-      setProfile(fetchResponse.payload);
-    }
+  const save = () => {
+    dispatch(updateUserThunk(profile)).then(() => {
+      setSavedProfile(profile);
+    });
   };
+  // const save = async () => {
+  //   const updateResponse = await dispatch(updateUserThunk(profile));
+  //   const fetchResponse = await dispatch(profileThunk());
+  //   if (updateResponse.payload && fetchResponse.payload) {
+  //     setProfile(fetchResponse.payload);
+  //   }
+  // };
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -29,7 +34,7 @@ function ProfileScreen() {
       setProfile(payload);
     };
     fetchProfile();
-  }, []);
+  }, [dispatch]);
 
   return (
       <div>
