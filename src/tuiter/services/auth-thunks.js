@@ -16,19 +16,13 @@ export const logoutThunk = createAsyncThunk(
     });
 export const updateUserThunk = createAsyncThunk(
     "user/updateUser", async (user) => {
-      await authService.updateUser(user);
-      return user;
+      const updatedUser = await authService.updateUser(user);
+      return updatedUser;
     });
 export const registerThunk = createAsyncThunk(
     "user/registerUser",
-    async ({username, password, firstName, lastName}) => {
-      const userData = {
-        username,
-        password,
-        firstName,
-        lastName,
-      };
-      await authService.register(userData);
-      return userData;
+    async (user) => {
+      const registeredUser = await authService.register(user);
+      return registeredUser;
     }
 )
