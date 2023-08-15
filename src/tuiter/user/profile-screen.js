@@ -15,10 +15,12 @@ function ProfileScreen() {
     setProfile(newProfile);
   };
 
-  const save = () => {
-    dispatch(updateUserThunk(profile)).then(() => {
-      setSavedProfile(profile);
-    });
+  const save = async () => {
+    const updateResponse = await dispatch(updateUserThunk(profile));
+    const fetchResponse = await dispatch(profileThunk());
+    if (updateResponse.payload && fetchResponse.payload) {
+      setProfile(fetchResponse.payload);
+    }
   };
 
   useEffect(() => {
@@ -27,7 +29,7 @@ function ProfileScreen() {
       setProfile(payload);
     };
     fetchProfile();
-  }, [dispatch]);
+  }, []);
 
   return (
       <div>
